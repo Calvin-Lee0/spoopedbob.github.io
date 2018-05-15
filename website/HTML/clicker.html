@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Meme Clicker</title>
+<script type="text/javascript">
+var score = 0;
+function meme_clicker()  {
+		score =score +1;
+		document.getElementById("score").value = score;
+	}
+</script>
+</head>
+
+<body>
+<button onClick="meme_clicker();"><img src="../images/meme.png" alt="a meme"></button>
+<h1>Meme Count</h1>
+<input id="score" type="text" value="0">
+</body>
+</html>
