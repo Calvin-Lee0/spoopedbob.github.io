@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+	var hour = prompt("WAT HOUR IS IT IN MILITARY TIME"); 
+		if( hour >= 6 && hour <= 10 )  {
+			alert("CONTINENTAL BREAKFAST IS IN DA LOBBY");
+			}
+		else if( hour >= 11 && hour <= 14 )  {
+			alert("DA RESTURANT IS OPEN");
+			var reservation = confirm("DO YA WANT TO MAKE RESERVATION");
+				if(reservation == true)  {
+					var reservationTime = Math.floor(Math.random() * 6);
+					switch(reservationTime)  {
+						case 0:
+							alert("YOU HAS MADE RESERVATION AT 11:00 AM");
+							break;
+						case 1:
+							alert("YOU HAS MADE RESERVATION AT 11:30 AM");
+							break;
+						case 2:
+							alert("YOU HAS MADE RESERVATION AT 12:00 PM");
+							break;
+						case 3: 
+							alert("YOU HAS MADE RESERVATION AT 12:30 PM");
+							break;
+						case 4:
+							alert("YOU HAS MADE RESERVATION AT 13:00 PM");
+							break;
+						case 5:
+							alert("YOU HAS MADE RESERVATION AT 13:30 PM");
+							break;
+						}
+					}
+			}
+		else	if(hour >= 17 && hour <= 21 )  {
+			alert("U CAN ORDER ROOM SERVICE OR GET FOOD FROM DA RESTURANT");
+			var reservation2 = confirm("DO YA WANT TO MAKE RESERVATION");
+				if(reservation2 == true)  {
+					var reservationTime2 = Math.floor(Math.random() * 9);
+					switch(reservationTime2)  {
+						case 0:
+							alert("YOU HAS MADE RESERVATION AT 17:00 PM");
+							break;
+						case 1:
+							alert("YOU HAS MADE RESERVATION AT 17:30 PM");
+							break;
+						case 2:
+							alert("YOU HAS MADE RESERVATION AT 18:00 PM");
+							break;
+						case 3: 
+							alert("YOU HAS MADE RESERVATION AT 18:30 PM");
+							break;
+						case 4:
+							alert("YOU HAS MADE RESERVATION AT 19:00 PM");
+							break;
+						case 5:
+							alert("YOU HAS MADE RESERVATION AT 19:30 PM");
+							break;
+						case 6:
+							alert("YOU HAS MADE RESERVATION AT 20:00 PM");
+							break;
+						case 7:
+							alert("YOU HAS MADE RESERVATION AT 20:30 PM");
+							break;
+						}
+					}
+				}
+		else  {
+			alert("GO WAIT OR GET YOSELF SOME SNACKS");
+			}
+</script>
+</body>
+</html>
